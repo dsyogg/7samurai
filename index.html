@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!-- Главная страница сайта 7 самураев -->
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>7 самураев - Доставка суши и пиццы</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="icon" href="images/favicon.ico" />
+    </head>
+<body>
+    <!-- Шапка сайта с названием и навигацией -->
+    <header>
+        <img src="images/logotip.jpg" alt="Логотип 7 самураев" class="logo" />
+        <h1>7 самураев</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Главная</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="services.html">Услуги</a></li>
+                <li><a href="blog.html">Акции</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Основной контент главной страницы -->
+    <main>
+        <!-- Приветственный блок с призывом к действию -->
+        <section class="hero">
+            <h2>Свежие суши и горячая пицца с доставкой на дом</h2>
+            <p>Закажите любимые блюда и наслаждайтесь вкусом прямо у себя дома!</p>
+            <a href="services.html" class="btn">Наши услуги</a>
+        </section>
+        <!-- Основные преимущества компании -->
+        <section class="features">
+            <div class="feature">
+                <h3>Быстрая доставка</h3>
+                <p>Мы доставим ваш заказ в кратчайшие сроки.</p>
+            </div>
+            <div class="feature">
+                <h3>Свежие ингредиенты</h3>
+                <p>Только качественные продукты для вашего удовольствия.</p>
+            </div>
+            <div class="feature">
+                <h3>Разнообразное меню</h3>
+                <p>Суши, пицца и многое другое на любой вкус.</p>
+
+
+                 
+            <br>
+            </div>
+            
+        </section>
+        <section class="featurePizza">
+         <div id="pizza">
+                 <img class="photoPizza" src="images/pizzaMargarita.avif" alt=""> <br>
+           Увеличенная порция моцареллы, томаты, итальянские травы, фирменный томатный соус
+            
+            </div>  
+        
+            <div id="pizza">
+                 <img class="photoPizza" src="images/pizzaMega.avif" alt=""> <br>
+          Ветчина, бекон, соус ранч, моцарелла, маринованные огурчики, красный лук, итальянские травы и горчичный соус
+                        </div>
+
+
+
+
+ <div id="pizza">
+                 <img class="photoPizza" src="images/pizzaPeperoni.avif" alt=""> <br>
+         Пикантная пепперони, увеличенная порция моцареллы, фирменный томатный соус
+                        </div>
+
+
+   
+
+        </section>
+
+      
+     
+    </main>
+    <!-- Подвал сайта с копирайтом -->
+    <footer>
+        <p>© <span id="year"></span> 7 самураев. Все права защищены.</p>
+    </footer>
+    <script>
+        // Скрипт для динамического обновления года в футере
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

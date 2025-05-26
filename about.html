@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!-- Страница "О нас" сайта 7 самураев -->
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>О нас - 7 самураев</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="icon" href="images/favicon.ico" />
+    </head>
+<body>
+    <!-- Шапка сайта с названием и навигацией -->
+    <header>
+        <img src="images/logotip.jpg" alt="Логотип 7 самураев" class="logo" />
+        <h1>7 самураев</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html" class="active">О нас</a></li>
+                <li><a href="services.html">Услуги</a></li>
+                <li><a href="blog.html">Акции</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Основной контент страницы "О нас" -->
+    <main>
+        <h2>О нашей компании</h2>
+        <p>7 самураев — это команда профессионалов, которая уже много лет радует своих клиентов вкусной суши и пиццей с доставкой на дом.</p>
+        <p>Мы используем только свежие ингредиенты и тщательно следим за качеством каждого блюда.</p>
+        <p>Наша миссия — приносить радость и вкус в каждый дом.</p>
+    </main>
+    <!-- Подвал сайта с копирайтом -->
+    <footer>
+        <p>© <span id="year"></span> 7 самураев. Все права защищены.</p>
+    </footer>
+    <script>
+        // Скрипт для динамического обновления года в футере
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

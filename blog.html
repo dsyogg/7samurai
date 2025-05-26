@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!-- Страница "Акции" сайта 7 самураев -->
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Акции - 7 самураев</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="icon" href="images/favicon.ico" />
+    </head>
+<body>
+    <!-- Шапка сайта с названием и навигацией -->
+    <header>
+        <img src="images/logotip.jpg" alt="Логотип 7 самураев" class="logo" />
+        <h1>7 самураев</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="services.html">Услуги</a></li>
+                <li><a href="blog.html" class="active">Акции</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Основной контент страницы "Акции" -->
+    <main>
+        <h2>Наши акции</h2>
+        <section>
+            <h3>Скидка 20% на все суши по понедельникам</h3>
+            <p>Начинайте неделю вкусно! Заказывайте суши с 20% скидкой каждый понедельник.</p>
+            <img src="images/20-rolly-site.jpg" alt="">
+        </section>
+        <section>
+            <h3>Мясная пицца в подарок</h3>
+            <p>При заказе на доставку от 1199 рублей.</p>
+            <img src="images/myasnaya_1080_na_1080_1_.jpg" alt="">
+        </section>
+        <section>
+            <h3>Комбо-нейро</h3>
+            <p>Сочетайте суши и пиццу в выгодных комбо-наборах и экономьте.</p>
+            <img src="images/7b6b5644100d43e58db958b846f2404f.jpg" alt="">
+        </section>
+    </main>
+    <!-- Подвал сайта с копирайтом -->
+    <footer>
+        <p>© <span id="year"></span> 7 самураев. Все права защищены.</p>
+    </footer>
+    <script>
+        // Скрипт для динамического обновления года в футере
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
